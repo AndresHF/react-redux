@@ -1,5 +1,7 @@
 # react-redux
 
+<img src="https://github.com/AndresHF/react-redux/blob/master/img.png" />
+
 ---
 <h2>Instalación</h2>
 
