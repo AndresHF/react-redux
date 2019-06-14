@@ -8,15 +8,15 @@ git clone https://github.com/AndresHF/react-redux.git
 ```
 
 ```
-cd react-redux
+cd react-redux && yarn install
 ```
 
 ```
-yarn install
+cd app && yarn install
 ```
 
 ```
-yarn install
+yarn start
 ```
 
 ---
