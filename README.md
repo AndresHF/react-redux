@@ -1,7 +1,7 @@
 # react-redux
 ---
 - [Instalación](#instalación)
-
+- [Acerca de](#acerca de)
 ---
 
 
@@ -25,5 +25,12 @@ cd app && yarn install
 ```
 yarn start
 ```
+
+---
+
+---
+<h2>Acerca de</h2>
+
+Implementación básica de redux. <br>
 
 ---
