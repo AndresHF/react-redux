@@ -1,4 +1,9 @@
 # react-redux
+---
+- [Instalación](#instalación)
+
+---
+
 
 <img src="https://github.com/AndresHF/react-redux/blob/master/img.png" />
 
