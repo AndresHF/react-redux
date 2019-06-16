@@ -4,7 +4,7 @@
 ---
 
 
-<img src="https://github.com/AndresHF/react-redux/blob/master/img.png" />
+<img src="" />
 
 ---
 <h2>Instalación</h2>
