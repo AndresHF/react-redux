@@ -2,15 +2,18 @@ import React from "react";
 import "./styles/App.css";
 import DataGrid from "./components/dataGrid/DataGrid";
 import MyChart from "./components/rowAverage/RowAverage";
-import { datagridReducer } from "./reducers/datagrid";
-console.log(typeof datagridReducer);
+import { Row } from "antd";
 
 class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <MyChart />
-        <DataGrid />
+        <Row style={{ width: "100%" }}>
+          <MyChart />
+        </Row>
+        <Row style={{ width: "100%" }}>
+          <DataGrid />
+        </Row>
       </div>
     );
   }

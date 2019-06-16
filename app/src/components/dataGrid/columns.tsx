@@ -10,11 +10,11 @@ export const columns = (dispatch: Function, rows: Array<DataType>) =>
       title: titles[k],
       dataIndex: k,
       key: k,
-      render: (value: boolean | number, record: DataType) => {
+      render: (value: boolean | number | string, record: DataType) => {
         if (typeof value === "boolean") {
           const data = {
             field: k,
-            index: record.key - 1,
+            index: rows.indexOf(record),
             value: !value,
             rows
           };
@@ -27,7 +27,8 @@ export const columns = (dispatch: Function, rows: Array<DataType>) =>
               }}
             />
           );
-        } else if (typeof value === "string") {
+        }
+        if (typeof value === "string") {
           return <div>{value}</div>;
         }
         return (
@@ -37,7 +38,7 @@ export const columns = (dispatch: Function, rows: Array<DataType>) =>
             onChange={val => {
               const data = {
                 field: k,
-                index: record.key - 1,
+                index: rows.indexOf(record),
                 value: val,
                 rows
               };

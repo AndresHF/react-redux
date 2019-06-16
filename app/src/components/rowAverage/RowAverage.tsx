@@ -32,8 +32,10 @@ const MyChart: React.FunctionComponent<IMyChartProps> = ({ storeState }) => {
         >
           {storeState.selectedRows.length > 0 ? (
             <Row type="flex" justify="center" align="middle">
-              <Col xl={10} md={24}>
-                <span style={{ fontSize: 28 }}>Item average</span>
+              <Col xl={10} md={24} style={{ height: 270 }}>
+                <span style={{ fontSize: 28, paddingLeft: 70 }}>
+                  Item average
+                </span>
                 <Chart height={300} data={pieData} forceFit>
                   <Coord type="theta" radius={1} />
                   <Axis name="category" />
@@ -69,9 +71,11 @@ const MyChart: React.FunctionComponent<IMyChartProps> = ({ storeState }) => {
                   </Geom>
                 </Chart>
               </Col>
-              <Col xl={10} md={24}>
+              <Col xl={10} md={24} style={{ height: 270 }}>
                 <Row type="flex" justify="center">
-                  <span style={{ fontSize: 28 }}>Cost and taxes</span>
+                  <span style={{ fontSize: 28, paddingLeft: 70 }}>
+                    Cost and taxes
+                  </span>
                   <Chart height={300} style={{ width: "100%" }} data={data}>
                     <Axis name="sold" />
                     <Axis name="category" />
@@ -93,7 +97,7 @@ const MyChart: React.FunctionComponent<IMyChartProps> = ({ storeState }) => {
               </Col>
             </Row>
           ) : (
-            undefined
+            <div>DISPLAY CONTAINER</div>
           )}
         </Card>
       </Col>
